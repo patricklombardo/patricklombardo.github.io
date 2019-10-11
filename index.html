@@ -1,62 +1,154 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Patrick Lombardo</title>
-</head>
-<body>
-  <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Patrick Lombardo</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <!-- Navigation -->
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Patrick Lombardo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="content">
-
-    <!-- About -->
-    <div class="section" id="about">
-      <div class="subsection headshot">
-        <img src="" alt="">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-      
-      <div class="subsection about-me">
-        <p>About me</p>
+    </nav>
+
+    <div class="container">
+      <div class="section title">
+        <div class="title">
+          <h1>Patrick Lombardo</h1>
+          <hr />
+          <h3>Software Engineer</h3>
+        </div>
       </div>
 
+      <hr />
+
+      <!-- About -->
+      <div class="section" id="about">
+        <h2>About Me</h2>
+        <div class="row">
+          <div class="subsection about-me col">
+            <p>Hello and welcome to my personal page! I am an agile software engineer based in Philadelphia with an interest in user experience and data engineering. I recieved a Bachelor of Arts in Mathematics from Drexel University with minors in French and Economics. I love to travel and experience the world's cultures and cusines, and enjoyed studying in Paris, France and working as a data analyst in Heraklion, Greece during my time at Drexel.</p>
+          </div>
+          <div class="subsection headshot col">
+            <img class="rounded mx-auto d-block" src="./media/headshot-square.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Skills and Interests -->
+      <div class="section" id="skills">
+        <h2>Skills</h2>
+
+        <div class="card-container">
+          <div class="card">
+            <ul class="list-group">
+              <li class="list-group-item active">Web Development</li>
+              <li class="list-group-item">JavaScript</li>
+              <li class="list-group-item">HTML5</li>
+              <li class="list-group-item">CSS3 &amp; SCSS</li>
+              <li class="list-group-item">React</li>
+              <li class="list-group-item">Redux</li>
+              <li class="list-group-item">AngularJS</li>
+              <li class="list-group-item">Jasmine &amp; Jest</li>
+              <li class="list-group-item">BootStrap</li>
+              <li class="list-group-item">Node</li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="list-group">
+              <li class="list-group-item active">Analytics</li>
+              <li class="list-group-item">Python</li>
+              <li class="list-group-item">R</li>
+              <li class="list-group-item">SQL</li>
+              <li class="list-group-item">MATLAB</li>
+              <li class="list-group-item">TensorFlow</li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="list-group">
+              <li class="list-group-item active">Technologies</li>
+              <li class="list-group-item">GitHub</li>
+              <li class="list-group-item">Google Cloud</li>
+              <li class="list-group-item">Tableau</li>
+              <li class="list-group-item">Photoshop</li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="list-group">
+              <li class="list-group-item active">Soft Skills</li>
+              <li class="list-group-item">ICAgile Certified</li>
+              <li class="list-group-item">Accenture DevOps Certified</li>
+              <li class="list-group-item">Design Thinking</li>
+              <li class="list-group-item">French (Fluent)</li>
+              <li class="list-group-item">German (Conversational)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Experience -->
+      <div class="section" id="experience">
+        <h2>Experience</h2>
+        <br>
+            <h3><a href="./media/Lombardo_Resume_11-Oct-2019.pdf" target="_blank">Resume</a></h3>
+        <br>
+        <!-- <h3>Projects I'm Working On</h3> -->
+          
+      </div>
+
+      <hr />
+
+      <div class="section" id="contact">
+        <h2>Contact</h2>
+        <button type="button" class="btn btn-link"><a href="https://www.linkedin.com/in/patrickjohnlombardo/" target="_blank">LinkedIn</a>
+        </button>
+        <button type="button" class="btn btn-link"><a href="https://github.com/patricklombardo" target="_blank">GitHub</a>
+        </button>
+        <button type="button" class="btn btn-link">patrickjohnlombardo[at]gmail[dot]com
+          </button>
+
+      </div>
     </div>
-
-    <!-- Skills and Interests -->
-    <div class="section" id="skills">
-      <ul>
-        <li>Web Development
-          <ul>
-            <li>JavaScript</li>
-            <li>HTML5</li>
-            <li>CSS3 &amp; SCSS</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>AngularJS</li>
-            <li>Jasmine &amp; Jest</li>
-            <li>BootStrap</li>
-            <li>Node</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Experience -->
-    <div class="section" id="Experience">
-      <!-- Professional Experience -->
-      <div class="subsection" id="professional">
-
-      </div>
-
-      <!-- Education and Project Experience -->
-      <div class="subsection" id="project">
-
-      </div>
-
-    </div>
-  </div>
-
-</body>
+  </body>
 </html>

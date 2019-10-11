@@ -1,0 +1,43 @@
+img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Sections */
+.section {
+  margin: 2rem;
+}
+
+.subsection {
+  margin: 2rem;
+}
+
+/* Title */
+.title {
+  text-align: center;
+}
+
+/* About */
+
+/* Skills Cards */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.section .card {
+  width: 14rem;
+  height: auto;
+  margin: 1rem;
+}
+
+.card .active {
+  background-color: grey;
+  border: none;
+}
+
+.experience {
+  display: flex;
+}
