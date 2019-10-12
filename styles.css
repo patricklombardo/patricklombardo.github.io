@@ -27,17 +27,22 @@ img {
   align-items: flex-start;
 }
 
-.section .card {
+#skills .card {
   width: 14rem;
   height: auto;
   margin: 1rem;
 }
 
-.card .active {
+#skills .card .active {
   background-color: grey;
   border: none;
 }
 
 .experience {
   display: flex;
+}
+
+/* Experience Cards */
+#experience .card {
+  margin-bottom: 2rem;
 }
